@@ -42,7 +42,6 @@
                             <a class="nav-link" href="about.html">关于我们&nbsp; </a>
                         </li>
                     </ul>
-                    <!-- 进入搜索pop up -->
                     <ul class="navbar-nav search-right mt-lg-0 mt-2">
                         <li class="nav-item mr-2" title="Search"><a href="#search" class="btn search-search">
                             <span class="fa fa-search" aria-hidden="true"></span></a></li>
@@ -53,7 +52,9 @@
                     <div id="search" class="pop-overlay">
                         <div class="popup">
                             <form action="error.html" method="GET" class="d-sm-flex">
-                                <input type="search" placeholder="关键词..." name="search" required="required" autofocus>
+                                <label>
+                                    <input type="search" placeholder="关键词..." name="search" required="required" autofocus>
+                                </label>
                                 <button type="submit"><span class="fa fa-search"></span></button>
                                 <a class="close" href="#">&times;</a>
                             </form>
@@ -61,20 +62,6 @@
                     </div>
                 </div>
 
-                <!-- toggle switch for light and dark theme -->
-                <div class="mobile-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
             </nav>
         </div>
     </section>
@@ -87,6 +74,7 @@
         </div>
     </div>
 </section>
+
 <div class="w3l-news" id="news">
     <section id="grids5-block" class="py-5">
         <div class="container py-lg-5 py-md-4 py-2">
@@ -184,7 +172,7 @@
                 </div>
                 <div class="footer-text mt-4">
                     <p><strong>地址 :</strong> 中国深圳市南山区学苑大道1088号南方科技大学创园9栋402室</p>
-                    <p class="my-2"><strong>电话 :</strong> <a href="+8675580818784">+86-75580818784 &nbsp;</a></p>
+                    <p class="my-2"><strong>电话 :</strong> +86-75580818784 &nbsp;</p>
                     <p><strong>邮箱 :</strong> <a href="mailto:767703980@qq.com">767703980@qq.com&nbsp;</a></p>
                 </div>
             </div>
@@ -195,34 +183,6 @@
 <div class="cpy-right text-center py-4">
     <p>Copyright &copy; 2021.SUSTech OBS Lab &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.</p>
 </div>
-
-<!-- move top -->
-<button onclick="topFunction()" id="movetop" title="Go to top">
-    <span class="fa fa-level-up" aria-hidden="true"></span>
-</button>
-<script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("movetop").style.display = "block";
-        } else {
-            document.getElementById("movetop").style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
-
-</script>
-<!-- /move top -->
 
 <!--  javascripts file here -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>

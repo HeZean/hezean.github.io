@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="zh">
 <head>
-    <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>共享 | SUSTech OBS Lab</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- CSS样式模板 -->
+    <title>共享 | SUSTech OBS Lab</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 
@@ -43,7 +42,6 @@
                             <a class="nav-link" href="about.html">关于我们&nbsp; </a>
                         </li>
                     </ul>
-                    <!-- 进入搜索pop up -->
                     <ul class="navbar-nav search-right mt-lg-0 mt-2">
                         <li class="nav-item mr-2" title="Search"><a href="#search" class="btn search-search">
                             <span class="fa fa-search" aria-hidden="true"></span></a></li>
@@ -54,7 +52,9 @@
                     <div id="search" class="pop-overlay">
                         <div class="popup">
                             <form action="error.html" method="GET" class="d-sm-flex">
-                                <input type="search" placeholder="关键词..." name="search" required="required" autofocus>
+                                <label>
+                                    <input type="search" placeholder="关键词..." name="search" required="required" autofocus>
+                                </label>
                                 <button type="submit"><span class="fa fa-search"></span></button>
                                 <a class="close" href="#">&times;</a>
                             </form>
@@ -62,20 +62,6 @@
                     </div>
                 </div>
 
-                <!-- toggle switch for light and dark theme -->
-                <div class="mobile-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
             </nav>
         </div>
     </section>
@@ -152,21 +138,9 @@
     </div>
 </section>
 
-<!-- footer -->
 <footer class="py-5">
     <div class="container py-lg-4 py-2">
         <div class="row footer-top">
-<!--            <div class="col-lg-4 footer-grid_section_1its footer-text">-->
-<!--                <div class="footer-title">-->
-<!--                    <h3>团队简介</h3>-->
-<!--                </div>-->
-<!--                <p class="mt-lg-4 mt-3 mb-4 pb-lg-2">简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍-->
-<!--                    简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍-->
-<!--                </p>-->
-<!--                <a href="about.html" class=" link-style p-0">联系我们-->
-<!--                    <span class="fa fa-chevron-right"></span>-->
-<!--                </a>-->
-<!--            </div>-->
             <div class="col-lg-6 col-md-4 footer-grid_section_1its mt-lg-0 mt-5">
                 <div class="footer-title">
                     <h3>联系方式&nbsp;</h3>
@@ -177,55 +151,13 @@
                     <p><strong>邮箱 :</strong> <a href="mailto:767703980@qq.com">767703980@qq.com&nbsp;</a></p>
                 </div>
             </div>
-<!--            <div class="col-lg-4 col-md-6 footer-grid_section_1its footer-text mt-lg-0 mt-5">-->
-<!--                <div class="footer-title">-->
-<!--                    <h3>RSS订阅(暂未开放)</h3>-->
-<!--                </div>-->
-<!--                <div class="info-form-right mt-4 p-0">-->
-<!--                    <p class="mb-4">您可在下方输入您的邮箱，以便第一时间接收OBS实验室的新闻动态。</p>-->
-<!--                    <form action="#" method="post">-->
-<!--                        <div class="form-group mb-2">-->
-<!--                            <input type="email" class="form-control" name="Email" placeholder="邮箱..." required="">-->
-<!--                        </div>-->
-<!--                        <button type="submit" class="btn btn-style btn-primary w-100 d-block ml-auto">订阅</button>-->
-<!--                    </form>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
     </div>
 </footer>
 
-<!-- copyright -->
 <div class="cpy-right text-center py-4">
     <p>Copyright &copy; 2021.SUSTech OBS Lab &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.</p>
 </div>
-<!-- //copyright -->
-
-<!-- move top -->
-<button onclick="topFunction()" id="movetop" title="Go to top">
-  <span class="fa fa-level-up" aria-hidden="true"></span>
-</button>
-<script>
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction()
-  };
-
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("movetop").style.display = "block";
-    } else {
-      document.getElementById("movetop").style.display = "none";
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-<!-- /move top -->
 
 <!--  javascripts file here -->
 <script src="assets/js/jquery-3.3.1.min.js"></script>
