@@ -1,42 +1,819 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
+<!doctype html>
+<html lang="zh">
 <head>
-    <title>404 Error | CatOverflow</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首页 | SUSTech OBS Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS样式模板 -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 
-
 <body>
+<header id="site-header" class="fixed-top">
+    <section class="w3l-header-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <h1><a class="navbar-brand" href="index.html">
+                    深圳海底地震仪设备与工程实验室&nbsp; &nbsp; &nbsp; &nbsp;
+                </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa icon-expand fa-bars"></span>
+                    <span class="fa icon-close fa-times"></span>
+                </button>
 
-<section class="w3l-main">
-    <div class="error-page">
-        <div class="wrapper">
-            <div class="main-cover w3">
-                <div class="lefterr">
-                    <h2 class="oopshny">Can't find the page you want 🥺</h2>
-                    <a href="https://hezean.github.io/index.html" class="backw3l">&nbsp;Bring me to Home&nbsp;</a>
-                    <a href="https://github.com/hezean" class="backw3l">Bring me to GitHub</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">首页&nbsp; </a>
+                        </li>
+                        <li class="nav-item @@about__active">
+                            <a class="nav-link" href="product.html">产品展示&nbsp; </a>
+                        </li>
+                        <li class="nav-item @@services__active">
+                            <a class="nav-link" href="share.html">共享平台&nbsp; </a>
+                        </li>
+                        <li class="nav-item @@services__active">
+                            <a class="nav-link" href="academic.html">学术交流&nbsp; </a>
+                        </li>
+                        <li class="nav-item @@contact__active">
+                            <a class="nav-link" href="about.html">关于我们&nbsp; </a>
+                        </li>
+                    </ul>
+                    <!-- 进入搜索pop up -->
+                    <ul class="navbar-nav search-right mt-lg-0 mt-2">
+                        <li class="nav-item mr-2" title="Search"><a href="#search" class="btn search-search">
+                            <span class="fa fa-search" aria-hidden="true"></span></a></li>
+                    </ul>
+
+                    <!-- search popup -->
+                    <!-- ！！！！！！暂时搜任何东西都会直接error！！！！！！ -->
+                    <div id="search" class="pop-overlay">
+                        <div class="popup">
+                            <form action="error.html" method="GET" class="d-sm-flex">
+                                <input type="search" placeholder="关键词..." name="search" required="required" autofocus>
+                                <button type="submit"><span class="fa fa-search"></span></button>
+                                <!-- <button type="submit" id="dianji" class="serch_icon h_green"><i class="mdui-icon material-icons">&#xe8b6;</i></button> -->
+                                <a class="close" href="#">&times;</a>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="menu_search">
+                      <div class="m_home h_green"><a href="https://www.sustech.edu.cn/" target="_parent"><i class="mdui-icon material-icons">&#xe88a;</i></a></div>
+                      <div class="m_lang h_green"><a class="en_btn" href="https://www.sustech.edu.cn/en/">EN</a></div>
+                      <div class="m_close h_green"><i class="mdui-icon material-icons">&#xe14c;</i></div>
+                      <form role="search" method="get" class="search_form" action="https://www.sustech.edu.cn/" target="_blank">
+                          <input type="search" id="bing" class="search-field" autocomplete="off" placeholder="| 搜索" value="" name="s">
+                          <button type="submit" id="dianji" class="serch_icon h_green"><i class="mdui-icon material-icons">&#xe8b6;</i></button>
+                      </form>
+                      </div> -->
                 </div>
 
-                <h1 class="cover-para w3ls">404</h1>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </section>
+</header>
+
+<!-- main-slider -->
+<!-- 可以放四个滑块 -->
+<!-- 介绍活动，讲座，成果，产品等 -->
+<section class="w3l-main-slider" id="home">
+    <div class="companies20-content">
+        <div class="owl-one owl-carousel owl-theme">
+            <!-- 例：出海等学术实践活动风采 -->
+            <!-- 改目标网址！！改目标网址！！改目标网址！！改目标网址！！改目标网址！！改目标网址！！改目标网址！！ -->
+            <div class="item">
+                <li>
+                    <div class="slider-info banner-view banner-top0 bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="banner-info-bg">
+                                    <h5>实践活动风采介绍示例 <br><span>文案主标题</span></h5>
+                                    <p class="mt-md-4 mt-3">活动介绍示例，文案副标题 </p>
+                                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="someWebSite.html">
+                                        了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+
+            <!-- 产品推广 -->
+            <!-- 可定期手动更换，或多加几个滑块 -->
+            <div class="item">
+                <li>
+                    <div class="slider-info  banner-view banner-top1 bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="banner-info-bg">
+                                    <h5>产品宣传语产品宣传语 <br><span> 可靠稳定</span></h5>
+                                    <p class="mt-md-4 mt-3"> 改目标网址 `product#xx` </p>
+                                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="product.html"> 了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+
+            <!-- 学术交流等信息 -->
+            <div class="item">
+                <li>
+                    <div class="slider-info banner-view banner-top2 bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="banner-info-bg">
+                                    <h5>学术交流学术交流 <br><span>学术交流</span></h5>
+                                    <p class="mt-md-4 mt-3">学术交流 </p>
+                                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="academic.html">
+                                        了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+
+            <!-- 团队风采展示 -->
+            <div class="item">
+                <li>
+                    <div class="slider-info banner-view banner-top3 bg bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="banner-info-bg">
+                                    <h5>专业团队专业团队<br> <span> 专业团队</span></h5>
+                                    <p class="mt-md-4 mt-3"> 专业团队专业团队专业团队 </p>
+                                    <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> 了解详情</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </div>
         </div>
     </div>
+</section>
 
-    <div class="copyright">
-        <p>Copyright &copy; 2021. Cat Overflow Blog &nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.</p>
+<!-- 关于我们 主段落1 -->
+<section class="wthree-row py-5 about-main" id="about">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row">
+            <div class="col-lg-4 mb-lg-0 mb-5">
+                <!--                <h3 class="title-small mb-2">实验室简介</h3>-->
+                <!--                <h3 class="title-big">宣传口号宣传口号宣传口号宣传口号 </h3>-->
+                <h5 class="abt-right">为研究地球内部构造和资源勘探提供技术支持</h5>
+                <hr>
+                <p class="">我们专注于新一代高性能的宽频带OBS设备的研发以及利用被动源
+                    OBS资料进行海底结构成像和动力学过程反演等研究工作</p>
+
+                <!--                <p class="pt-4">南方科技大学深圳海底地震仪设备与工程实验<br>-->
+                <!--                    室 (SUSTech OBS Lab) 是响应 "建设海洋强国" 的国家战略和深圳市 "海洋未来产业" 的发展规划，由深圳市发改委和南方科技大学共同组建。-->
+                <!--                    <br>这一高起点的实验室致力于高性能海底探测设备的研发，并进行海底地震和海啸灾害防御、海底资源开发以及揭示地球内部结构和动力学过程等科学研究。-->
+                <!--                    </p>-->
+                <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">关于团队</a>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="agileits-banner-info4">
+                    <img src="assets/images/members.jpg" alt="image" class="img-fluid radius-image"/>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p class="py-4 pl-3 d-inline about-right-text">
+                    南方科技大学深圳海底地震仪设备与工程实验室 (SUSTech OBS Lab) 是响应 "建设海洋强国" 的国家战略和深圳市 "海洋未来产业" 的发展规划，由深圳市发改委和南方科技大学共同组建。
+                    <br>这一高起点的实验室致力于高性能海底探测设备的研发，并进行海底地震和海啸灾害防御、海底资源开发以及揭示地球内部结构和动力学过程等科学研究。
+                    <!--                    我们专注于新一代高性能的宽频带OBS设备的研发以及利用被动源-->
+                    <!--                    OBS资料进行海底结构成像和动力学过程反演等研究工作，为研究地球内部构造和资源勘探提供技术支持。-->
+                </p>
+                <!--                <p class="pt-4">南方科技大学深圳海底地震仪设备与工程实验<br>-->
+                <!--                    室 (SUSTech OBS Lab) 是响应 "建设海洋强国" 的国家战略和深圳市 "海洋未来产业" 的发展规划，由深圳市发改委和南方科技大学共同组建。-->
+                <!--                    <br>这一高起点的实验室致力于高性能海底探测设备的研发，并进行海底地震和海啸灾害防御、海底资源开发以及揭示地球内部结构和动力学过程等科学研究。-->
+                <!--                </p>-->
+
+                <!--                <h5 class="abt-right">为研究地球内部构造和资源勘探提供技术支持</h5>-->
+                <!--                <hr>-->
+                <!--                <p class="">我们专注于新一代高性能的宽频带OBS设备的研发以及利用被动源-->
+                <!--                    OBS资料进行海底结构成像和动力学过程反演等研究工作</p>-->
+            </div>
+        </div>
     </div>
 </section>
 
+<!--  News section -->
+<div class="w3l-news" id="news">
+    <section id="grids5-block" class="py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <!--            <span class="title-small mb-2">新闻中心</span>-->
+            <h3 class="title-big">最新新闻推送</h3>
+            <div class="row mt-sm-5 mt-4">
+
+                <!--demo-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="grids5-info">
+                        <a class="d-block zoom"><img src="assets/images/news/default.jpg" alt=""
+                                                     class="img-fluid news-image"/></a>
+                        <div class="blog-info">
+                            <p class="date"><span class="fa fa-calendar mr-2"></span> February 04, 2021</p>
+                            <h4><a>OBS实验室新版网站上线</a></h4>
+                            <p>demonstration<br>&nbsp;</p>
+                            <a href="index.html" class=" link-style p-0 mt-4">了解详情
+                                <span class="fa fa-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- 产品速览 主段落2 -->
+<!-- 改box目标网址，图标 -->
+<section class="w3l-products py-5" id="services">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <!--Horizontal Tab-->
+                <div id="parentHorizontalTab">
+                    <ul class="resp-tabs-list hor_1">
+                        <li>震波监测</li>
+                        <li>回收信标</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="resp-tabs-container hor_1 mt-md-0 mt-4">
+                        <div class="products-content">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3>海洋和陆地设备</h3>
+                                    <p>超低功耗 分离式OBS
+                                        <br>精准定位回收 高速数据拷贝</p>
+                                    <div class="grids-ser my-md-5 my-4 text-center">
+                                        <div class="area-box">
+                                            <br>
+                                            <span class="fa fa-ship"></span>
+                                            <h4><a href="#feature" class="title-head">磐鲲 </a></h4>
+                                        </div>
+                                        <div class="area-box">
+                                            <br>
+                                            <span class="fa fa-anchor"></span>
+                                            <h4><a href="#feature" class="title-head">磐龟 </a></h4>
+                                        </div>
+                                        <div class="area-box">
+                                            <br>
+                                            <span class="fa fa-area-chart"></span>
+                                            <h4><a href="#feature" class="title-head">陆地地震仪 </a></h4>
+                                        </div>
+                                    </div>
+                                    <a href="share.html" class="btn btn-outline-primary btn-style mt-3">预约使用
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 mt-lg-0 mt-5">
+                                    <div style="text-align: center;">
+                                        <img src="assets/images/obs.jpg" class="img-fluid radius-image-full"
+                                             alt="OBS">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-content">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3>回收信标</h3>
+                                    <p>为了使设备在茫茫大海中得以寻找出来而做的辅助工具<br>可以保护OBS等贵重仪器，便于回收</p>
+                                    <!--                                        <br>两类产品介绍行数最好相同</p>-->
+                                    <div class="grids-ser my-md-5 my-4 text-center">
+                                        <div class="area-box">
+                                            <br>
+                                            <span class="fa fa-connectdevelop"></span>
+                                            <h4><a href="#feature" class="title-head">回收信标1 </a></h4>
+                                        </div>
+                                        <div class="area-box">
+                                            <br>
+                                            <span class="fa fa-magic"></span>
+                                            <h4><a href="#feature" class="title-head">北极星信标 </a></h4>
+                                        </div>
+                                        <!-- <div class="area-box">
+                                            <span class="fa fa-futbol-o"></span>
+                                            <h4><a href="#feature" class="title-head">产品名 </a></h4>
+                                        </div> -->
+                                    </div>
+                                    <a href="share.html" class="btn btn-outline-primary btn-style mt-3">预约使用
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 mt-lg-0 mt-5">
+                                    <div style="text-align: center;">
+                                        <img src="assets/images/beacon.jpg" class="img-fluid radius-image-full"
+                                             alt="Beacon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- home block3 -->
+<!-- <section class="wthree-row py-5 about-main" id="">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row">
+            <div class="col-lg-6 mb-lg-0 mb-sm-5 mb-4">
+                <h3 class="title-small mb-2">Protecting Our Environment</h3>
+                <h3 class="title-big">Scientifically Proven Effective Against </h3>
+                <p class="pt-4">Aliquam ac est vel nisl init et justo vel ut nibh rhoncusm vel eget
+                    enim. Curabitur mattis orci sed leo mattis, nec maximus nibh faucibus lorem dolor sit. Aliquam ac
+                    est vel nisl init et justo vel ut nibh rhoncusm vel eget enim. Curabitur mattis orci.</p>
+                <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">Know More</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="agileits-banner-info4">
+                    <img src="assets/images/image1.jpg" alt="image" class="img-fluid radius-image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- //home block3 -->
+<!-- services page block 2 -->
+<!-- <section class="w3l-features py-5" id="features">
+    <div class="call-w3 py-lg-5 py-md-4 py-2">
+        <div class="container">
+            <div class="row main-cont-wthree-2">
+                <div class="col-lg-6 feature-grid-left">
+                    <h4 class="title-big">Get The Best Sanitizing Services</h4>
+                    <p class="text-para mt-lg-4 mt-3">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed,
+                        lacinia est.
+                        Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet elit.
+                        Suspendisse non magna a velit efficitur. </p>
+                    <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ab qui impedit,
+                        libero illo
+                        quia sequi quibusdam iure. Error minus quod reprehenderit quae dolor velit soluta animi
+                        voluptate dicta enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, provident!
+                    </p>
+                    <a href="#url" class="btn btn-primary btn-style mt-md-5 mt-4">Discover More</a>
+                </div>
+                <div class="col-lg-6 feature-grid-right mt-lg-0 mt-5">
+                    <div class="call-grids-w3 d-grid">
+                        <div class="grids-1 box-wrap">
+                            <a href="#more" class="icon"><span class="fa fa-ticket"></span></a>
+                            <h4><a href="#feature" class="title-head">Our Employees</a></h4>
+                            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet.</p>
+                        </div>
+                        <div class="grids-1 box-wrap">
+                            <a href="#more" class="icon"><span class="fa fa-life-ring"></span></a>
+                            <h4><a href="#feature" class="title-head">Our Training</a></h4>
+                            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet.</p>
+                        </div>
+                        <div class="grids-1 box-wrap">
+                            <a href="#more" class="icon"><span class="fa fa-plane"></span></a>
+                            <h4><a href="#feature" class="title-head">Professionalism</a></h4>
+                            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet.</p>
+                        </div>
+                        <div class="grids-1 box-wrap">
+                            <a href="#more" class="icon"><span class="fa fa-building"></span></a>
+                            <h4><a href="#feature" class="title-head">Our Services</a></h4>
+                            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- //services page block 2 -->
+<!--
+<section class="w3l-servicesblock py-5" id="expect">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row">
+            <div class="col-lg-6 about-right-faq align-self">
+                <span class="title-small mb-2"> What to expect</span>
+                <h3 class="title-big mx-0"> Ready for Your Home or Office
+                    to Feel Rejuvenated?</h3>
+                <p class="mt-lg-4 mt-3 mb-lg-5 mb-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                    ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Non quae, fugiat.</p>
+                <div class="two-grids mt-md-0 mt-md-5 mt-4">
+                    <div class="grids_info">
+                        <span class="fa fa-paint-brush"></span>
+                        <div class="detail">
+                            <h4>100K+</h4>
+                            <p class="">Cleans.</p>
+                        </div>
+                    </div>
+                    <div class="grids_info">
+                        <span class="fa fa-life-ring"></span>
+                        <div class="detail">
+                            <h4>100%</h4>
+                            <p class="">Satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 offset-lg-1 offset-md-2 left-wthree-img mt-lg-0 mt-sm-5 mt-4 position-relative">
+                <img src="assets/images/image2.jpg" alt="" class="img-fluid radius-image">
+                <div class="imginfo__box">
+                    <h6 class="imginfo__title">Get a Price Quote Today!</h6>
+                    <p>Trust us with all of your commercial<br>or residential sanitizing needs. </p>
+                    <a href="tel:http://1(800)7654321"><span class="fa fa-phone mr-2"></span> 1-800-654-3210</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!-- middle -->
+<!--<div class="middle py-5">-->
+<!--    <div class="container py-lg-5 py-md-4">-->
+<!--        <div class="welcome-left text-center py-4">-->
+<!--            <h3 class="title-big mx-auto">需要预约使用海洋科研设备？</h3>-->
+<!--&lt;!&ndash;            <p>We’re here to bring you the sanitizing services you need.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            <a href="#started" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2">Get started</a>&ndash;&gt;-->
+<!--            <a href="share.html" class="btn btn-style btn-primary mt-sm-5 mt-4">联系我们</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- //middle -->
+
+<!-- <section class="w3l-clients" id="testimonials">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="row mt-lg-0 mt-md-5">
+                <div class="col-lg-5 align-self img-effect pr-md-0">
+                    <img src="assets/images/testimonials.jpg" alt="" class="radius-image img-fluid">
+                </div>
+                <div class="col-lg-6 offset-lg-1 mt-lg-0 mt-5">
+                    <span class="title-small mb-2">Our Testimonials</span>
+                    <h3 class="title-big">Excellent service and cleaning results</h3>
+                    <div id="owl-demo1" class="owl-carousel owl-theme mt-md-4 mt-2 py-2 mb-4">
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success
+                                            .</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>John wilson</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve
+                                            Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>Julia sakura</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve
+                                            Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>Roy Linderson</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve
+                                            Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>Mike Thyson</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
+                                            laudantium
+                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve
+                                            Success.</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>Laura gill</h3>
+                                            <p class="indentity">Seattle, Washington</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- <section class="w3l-logos py-5">
+    <div class="container py-lg-4 py-2">
+        <h3 class="title-big mx-0 text-center mb-md-5 mb-4"> Supplies & Partners</h3>
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-view">
+                <img src="assets/images/logo1.jpg" alt="company-logo" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-view">
+                <img src="assets/images/logo2.jpg" alt="company-logo" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-view mt-sm-0 mt-4">
+                <img src="assets/images/logo3.jpg" alt="company-logo" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-view mt-md-0 mt-4">
+                <img src="assets/images/logo4.jpg" alt="company-logo" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-view mt-lg-0 mt-4">
+                <img src="assets/images/logo2.jpg" alt="company-logo" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 logo-view mt-lg-0 mt-4">
+                <img src="assets/images/logo1.jpg" alt="company-logo" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- footer -->
+<footer class="py-5">
+    <div class="container py-lg-4 py-2">
+        <div class="row footer-top">
+            <!--            <div class="col-lg-4 footer-grid_section_1its footer-text">-->
+            <!--                <div class="footer-title">-->
+            <!--                    <h3>团队简介</h3>-->
+            <!--                </div>-->
+            <!--                <p class="mt-lg-4 mt-3 mb-4 pb-lg-2">简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍-->
+            <!--                    简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍简短的团队介绍-->
+            <!--                </p>-->
+            <!--                <a href="about.html" class=" link-style p-0">联系我们-->
+            <!--                    <span class="fa fa-chevron-right"></span>-->
+            <!--                </a>-->
+            <!--            </div>-->
+            <div class="col-lg-6 col-md-4 footer-grid_section_1its mt-lg-0 mt-5">
+                <div class="footer-title">
+                    <h3>联系方式&nbsp;</h3>
+                </div>
+                <div class="footer-text mt-4">
+                    <p><strong>地址 :</strong> 中国深圳市南山区学苑大道1088号南方科技大学创园9栋402室</p>
+                    <p class="my-2"><strong>电话 :</strong> <a href="+8675580818784">+86-75580818784 &nbsp;</a></p>
+                    <p><strong>邮箱 :</strong> <a href="mailto:767703980@qq.com">767703980@qq.com&nbsp;</a></p>
+                </div>
+            </div>
+            <!--        <div class="col-lg-4 col-md-6 footer-grid_section_1its footer-text mt-lg-0 mt-5">-->
+            <!--          <div class="footer-title">-->
+            <!--            <h3>RSS订阅(暂未开放)</h3>-->
+            <!--          </div>-->
+            <!--          <div class="info-form-right mt-4 p-0">-->
+            <!--            <p class="mb-4">您可在下方输入您的邮箱，以便第一时间接收OBS实验室的新闻动态。</p>-->
+            <!--            <form action="#" method="post">-->
+            <!--              <div class="form-group mb-2">-->
+            <!--                <input type="email" class="form-control" name="Email" placeholder="邮箱..." required="">-->
+            <!--              </div>-->
+            <!--              <button type="submit" class="btn btn-style btn-primary w-100 d-block ml-auto">订阅</button>-->
+            <!--            </form>-->
+            <!--          </div>-->
+            <!--        </div>-->
+        </div>
+    </div>
+</footer>
+
+<!-- copyright -->
+<div class="cpy-right text-center py-4">
+    <p>Copyright &copy; 2021.SUSTech OBS Lab &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.</p>
+</div>
+<!-- //copyright -->
+
+<!-- // 不要此按钮直接注释掉就好！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ -->
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-level-up" aria-hidden="true"></span>
+</button>
+<script>
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- /move top -->
+
+<!--  javascripts file here -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+
+<script src="assets/js/theme-change.js"></script> <!-- //light and dark mode switch js -->
+<!-- responsive tabs -->
+<script src="assets/js/easyResponsiveTabs.js"></script>
+
+<!--Plug-in Initialisation-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Horizontal Tab
+        $('#parentHorizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function (event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Horizontal Tab
+        $('#parentHorizontalTab1').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            tabidentify: 'hor_2', // The tab groups identifier
+            activate: function (event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+    });
+</script>
+
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.js"></script>
+
+<!-- script for banner slider-->
+<script>
+    $(document).ready(function () {
+        $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                667: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    })
+</script>
+
+<!-- owl carousel -->
+<!-- script for tesimonials carousel slider -->
+<script>
+    $(document).ready(function () {
+        $("#owl-demo1").owlCarousel({
+            loop: true,
+            nav: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                736: {
+                    items: 1,
+                    nav: false
+                }
+            }
+        })
+    })
+</script>
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
-
-
 </html>
