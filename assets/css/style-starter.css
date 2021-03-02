@@ -10281,7 +10281,7 @@ button.navbar-toggler.collapsed .icon-expand {
   position: relative; }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat 0px 0px;
+  background: url(../images/banner1.gif) no-repeat 0px 0px;
   background-size: cover;
   min-height: calc(100vh - 100px);
   position: relative;
@@ -10296,7 +10296,7 @@ button.navbar-toggler.collapsed .icon-expand {
   background-size: cover; }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/banner1.jpg) no-repeat 0px 0px;
+  background: url(../images/banner1.gif) no-repeat 0px 0px;
   background-size: cover; }
 
 .w3l-main-slider .banner-top2 {
