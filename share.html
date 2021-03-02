@@ -109,41 +109,71 @@
             <form action="#" method="post">
 
                 <div class="twice-two">
-                    <input type="text" class="form-control" name="name" id="Name" placeholder="姓名*" required>
-                    <input type="text" class="form-control" name="title" id="Title" placeholder="称谓">
-                    <input type="text" class="form-control" name="unit" id="Unit" placeholder="单位*" required>
-                    <input type="number" class="form-control" name="tel" id="Tel" placeholder="电话*" required>
+                    <input type="text" class="form-control" name="name" id="Name" placeholder="姓名*" style="height:56px;" required>
+                    <input type="text" class="form-control" name="title" id="Title" placeholder="称谓" style="height:56px;">
+                    <input type="text" class="form-control" name="unit" id="Unit" placeholder="单位*" style="height:56px;" required>
+                    <input type="text" class="form-control" name="tel" id="Tel" placeholder="电话*" style="height:56px;" required>
                 </div>
 
                 <div class="twice">
-                    <input type="text" class="form-control" name="mail" id="Mail" placeholder="邮箱">
+                    <input type="text" class="form-control" name="mail" id="Mail" placeholder="邮箱" style="height:56px;">
                     <br>
-                    <input type="text" class="form-control" name="position" id="Position" placeholder="地址*" required>
-                    <br>
+                    <input type="text" class="form-control" name="position" id="Position" placeholder="地址*" style="height:56px;" required>
+                    <br><br>
                 </div>
 
                 <div class="twice-two">
-                    <select class="form-control" name="device" id="Device" required>
-<!--                    <select class="form-control" name="device" id="Device" required>-->
-                        <option value='' disabled selected style='display:none;'>设备*</option>
-                        <optgroup label="OBS">
-                            <option value="磐鲲OBS">磐鲲 (10万/年)</option>
-                            <option value="磐鲲OBS2">磐鲲OBS (10万/年)</option>
+                    <select class="form-control" name="device" id="Device" style="height:56px;" required>
+                        <option value='' disabled selected style='display:none;'>&nbsp;&nbsp;设备*</option>
+                        <optgroup label="数据采集">
+                            <option value="磐鲲OBS">磐鲲OBS (10万/年)</option>
+                            <option value="磐龟OBS">磐龟OBS (2万/月)</option>
+                            <option value="八爪鱼数采">八爪鱼数采 (1.5万/台)</option>
                         </optgroup>
-                        <optgroup label="OBS">
-                            <option value="磐鲲OBS">磐鲲 (10万/年)</option>
-                            <option value="磐鲲OBS2">磐鲲OBS (10万/年)</option>
+                        <optgroup label="辅助工具">
+                            <option value="海萤信标">海萤信标 (1万/台)</option>
+                            <option value="海鹰OBS捕获器">海鹰OBS捕获器 (10万/套)</option>
                         </optgroup>
-
                     </select>
-                    <br>
+                    <select class="form-control" name="tarOcean" id="TarOcean" style="height:56px;" required>
+                        <option value='' disabled selected style='display:none;'>&nbsp;&nbsp;工作海域*</option>
+                            <option value="南海">南海</option>
+                            <option value="西太平洋">西太平洋</option>
+                            <option value="西南印度洋">西南印度洋</option>
+                            <option value="大西洋">大西洋</option>
+                            <option value="其他海区">其他海区</option>
+                    </select>
+                    <select class="form-control" name="depth" id="Depth" style="height:56px;" required>
+                        <option value='' disabled selected style='display:none;'>&nbsp;&nbsp;工作水深 (最大深度)*</option>
+                            <option value="< 1000m">< 1000m</option>
+                            <option value="< 2000m">< 2000m</option>
+                            <option value="< 3000m">< 3000m</option>
+                            <option value="< 4000m">< 4000m</option>
+                            <option value="< 6000m">< 6000m</option>
+                            <option value="> 6000m">> 6000m</option>
+                    </select>
                 </div>
 
-                <textarea name="w3lMessage" class="comment" id="Comment" placeholder="备注"></textarea>
+                <div class="twice-two">
+                    <input type="date" class="form-control" name="initdate" id="InitDate" style="height:56px;" min="today" required>
+                    <input type="date" class="form-control" name="findate" id="FinDate" style="height:56px;" required>
 
+                    <script>
+                        var date = new Date();
+                        var year = date.getFullYear();
+                        var month = ('0'+ (date.getMonth() + 1)).slice(-2);
+                        var day = ('0' + date.getDate()).slice(-2);
+                        var time = year +'-'+ month +'-'+ day;
+                        document.getElementById('InitDate').setAttribute('min', time);
+                        document.getElementById('FinDate').setAttribute('min', time);
+                    </script>
+                </div>
+
+                <textarea name="w3lMessage" class="comment" id="Comment" placeholder="备注 / 其他需求"></textarea>
 
                 <div class="text-right">
                    <button type="reset" class="btn btn-primary btn-style mt-4">清空内容</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                    <button type="submit" class="btn btn-primary btn-style mt-4">提交申请</button>
                 </div>
             </form>
