@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>交流 | SUSTech OBS Lab</title>
-
+    <link rel="icon" href="assets/images/res/weblogo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
@@ -68,37 +68,33 @@
 <div class="w3l-news" id="news">
     <section id="grids5-block" class="py-5">
 
-        <div class="map-content-9 pt-lg-5">
+        <div class="container py-lg-5 py-md-4 py-2">
             <span class="title-small mb-2">会议报名登记</span>
+            <div class="map-content-9 pt-lg-5">
+                <form action="#" method="post">
+                    <div class="twice-two">
+                        <input type="text" class="form-control" name="name" id="Name" placeholder="姓名*" style="height:50px;" required>
+                        <input type="text" class="form-control" name="title" id="Title" placeholder="称谓" style="height:50px;">
+                        <input type="text" class="form-control" name="unit" id="Unit" placeholder="单位*" style="height:50px;" required>
+                        <input type="number" class="form-control" name="tel" id="Tel" placeholder="电话*" style="height:50px;" required>
+                        <input type="text" class="form-control" name="mail" id="Mail" placeholder="邮箱" style="height:50px;">
 
-            <form action="#" method="post">
+                        <select class="form-control" name="serial" id="Serial" style="height:50px;" required>
+                            <option value='' disabled selected style='display:none;'>&nbsp;&nbsp;场次*</option>
 
-                <div class="twice-two">
-                    <input type="text" class="form-control" name="name" id="Name" placeholder="姓名*" style="height:50px;" required>
-                    <input type="text" class="form-control" name="title" id="Title" placeholder="称谓" style="height:50px;">
-                    <input type="text" class="form-control" name="unit" id="Unit" placeholder="单位*" style="height:50px;" required>
-                    <input type="number" class="form-control" name="tel" id="Tel" placeholder="电话*" style="height:50px;" required>
-                    <input type="text" class="form-control" name="mail" id="Mail" placeholder="邮箱" style="height:50px;">
-
-                    <select class="form-control" name="serial" id="Serial" style="height:50px;" required>
-                        <option value='' disabled selected style='display:none;'>&nbsp;&nbsp;场次*</option>
-
-                        <option value="null">暂无可报名会议</option>
-
-
-                    </select>
+                            <option value="null">暂无可报名会议</option>
 
 
-                </div>
+                        </select>
+                    </div>
+                    <input type="text" class="form-control" name="comment" id="Comment" placeholder="备注" style="height:50px;">
 
-                <input type="text" class="form-control" name="comment" id="Comment" placeholder="备注" style="height:50px;">
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-primary btn-style mt-4" disabled>登记报名</button>
+                    </div>
+                </form>
 
-
-                <div class="text-right">
-                    <button type="submit" class="btn btn-primary btn-style mt-4" disabled>登记报名</button>
-                </div>
-            </form>
-
+            </div>
         </div>
 
 
